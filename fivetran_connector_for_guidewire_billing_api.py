@@ -14,10 +14,16 @@ from fivetran_connector_sdk import Logging as log
 from fivetran_connector_sdk import Operations as op
 
 # Configuration Keys (Important: Use Fivetran UI for secure storage)
-GUIDEWIRE_BASE_URL = "guidewire_base_url"  # e.g., "http://your-guidewire-instance/billing/rest/v1"
-GUIDEWIRE_USERNAME = "guidewire_username"
-GUIDEWIRE_PASSWORD = "guidewire_password"
-GUIDEWIRE_API_VERSION = "guidewire_api_version" # e.g., "v1", "v2"
+# GUIDEWIRE_BASE_URL = "guidewire_base_url"  # e.g., "http://your-guidewire-instance/billing/rest/v1"
+# GUIDEWIRE_USERNAME = "guidewire_username"
+# GUIDEWIRE_PASSWORD = "guidewire_password"
+# GUIDEWIRE_API_VERSION = "guidewire_api_version" # e.g., "v1", "v2"
+
+GUIDEWIRE_BASE_URL = "http://your-guidewire-instance/billing/rest/v1"
+GUIDEWIRE_USERNAME = "jordan.martz@fivetran.com"
+GUIDEWIRE_PASSWORD = "fivetran"
+GUIDEWIRE_API_VERSION = "v2" 
+
 
 def schema(configuration: dict):
     """
